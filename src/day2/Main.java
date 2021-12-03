@@ -21,5 +21,4 @@ public class Main {
         submarine2.moveAndAim(commands);
         printer.printPart2(submarine2.getAnswer());
     }
-
 }
