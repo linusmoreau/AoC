@@ -17,4 +17,8 @@ public class Printer {
     public void printPart2(int answer) {
         printPart2(Integer.toString(answer));
     }
+
+    public void printPart2(long answer) {
+        printPart2(Long.toString(answer));
+    }
 }
