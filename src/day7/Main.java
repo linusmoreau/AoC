@@ -25,11 +25,7 @@ public class Main {
         for (int goTo = Collections.min(positions); goTo <= Collections.max(positions); goTo++) {
             int total = 0;
             for (int pos : positions) {
-                if (pos > goTo) {
-                    total += pos - goTo;
-                } else if (pos < goTo) {
-                    total += -(pos - goTo);
-                }
+                total += Math.abs(pos - goTo);
             }
             if (minTotal == -1 || total < minTotal) {
                 minTotal = total;
@@ -44,11 +40,7 @@ public class Main {
         for (int goTo = Collections.min(positions); goTo <= Collections.max(positions); goTo++) {
             int total = 0;
             for (int pos : positions) {
-                if (pos > goTo) {
-                    total += expand(pos - goTo);
-                } else if (pos < goTo) {
-                    total += expand(-(pos - goTo));
-                }
+                total += expand(Math.abs(pos - goTo));
             }
             if (minTotal == -1 || total < minTotal) {
                 minTotal = total;
