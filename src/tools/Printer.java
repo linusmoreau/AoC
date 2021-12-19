@@ -10,6 +10,10 @@ public class Printer {
         printPart1(Integer.toString(answer));
     }
 
+    public void printPart1(long answer) {
+        printPart1(Long.toString(answer));
+    }
+
     public void printPart2(String answer) {
         System.out.println("Part 2: " + answer);
     }
