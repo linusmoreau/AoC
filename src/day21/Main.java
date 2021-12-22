@@ -1,4 +1,4 @@
-package day20;
+package day21;
 
 import tools.Loader;
 import tools.Printer;
@@ -97,7 +97,7 @@ public class Main {
     public static void main(String[] args) {
         Printer printer = new Printer();
         Loader loader = new Loader();
-        ArrayList<String> lines = loader.load(20);
+        ArrayList<String> lines = loader.load(21);
         printer.printPart1(task1(lines));
         printer.printPart2(task2(lines));
     }
